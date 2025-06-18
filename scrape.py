@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 import time
-import comparison_bp
+from comparison import comparison_bp
 
 # Create Blueprint
 scrape_bp = Blueprint("comparison", __name__)
