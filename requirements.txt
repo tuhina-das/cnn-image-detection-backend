@@ -5,7 +5,7 @@ numpy==1.26.4
 Pillow==11.2.1
 requests==2.32.4
 selenium==4.33.0
-tensorflow==2.11.0
+tensorflow==2.15.1
 tensorflow_hub==0.16.1
 webdriver-manager==4.0.2
 gunicorn==23.0.0
