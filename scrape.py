@@ -21,11 +21,15 @@ def scrape_from_tags():
     print("Headers:", dict(request.headers))
     print("Content-Type:", request.content_type)
     try:
+        print("📈 Getting data from request") 
         data = request.get_json()
+        print("🏷️ Getting tags from data") 
         tags = data.get("tags", [])
+        print("☑️ Getting URLS from data") 
         img_urls = scrape_images(tags)
         return jsonify(img_urls), 200
     except Exception as e:
+        print("Error occurred:", e)
         return jsonify({"error": str(e)}), 500
     
 # Endpoint for the other function
