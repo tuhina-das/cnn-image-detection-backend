@@ -15,7 +15,7 @@ CORS(scrape_bp)  # Enable CORS on blueprint
 
 # Router to detect requests
 # TODO: UPDATE ROUTE 
-@comparison_bp.route("/api/scrape", methods=["POST"])
+@comparison_bp.route("/api/scrape", methods=["POST", "GET"])
 def scrape_from_tags():
     try:
         data = request.get_json()
