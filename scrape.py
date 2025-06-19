@@ -10,7 +10,7 @@ import time
 from comparison import comparison_bp
 
 # Create Blueprint
-scrape_bp = Blueprint("comparison", __name__)
+scrape_bp = Blueprint("scrape", __name__)
 CORS(scrape_bp)  # Enable CORS on blueprint
 
 # Router to detect requests
