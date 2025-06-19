@@ -10,8 +10,10 @@ import io
 from math import sqrt
 import requests
 from io import BytesIO
+import sys 
 # Removing matplotlib and pandas since they're not used 
-
+def main():
+    print("Running on Python", sys.version)
 # Create Blueprint
 comparison_bp = Blueprint("comparison", __name__)
 CORS(comparison_bp)  # Enable CORS on blueprint
@@ -136,4 +138,4 @@ def calculate_similarity(img_paths):
     # return cosine_sim_outputs.append(output)
 
 if __name__ == "__main__":
-    app.run()
+    main()
